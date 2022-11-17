@@ -69,10 +69,10 @@ public class BookStore {
 	}
 	public void deleteBook(String bookId)
 	{
-	 Iterator<Book>itr=BookList.iterator();
+	 Iterator<Book>itr=BooksList.iterator();
 		while(itr.hasNext())
 		{
-			if(itr.next().getBookID().equals(bookID)) {
+			if(itr.next().getBookId().equals(bookId)) {
 				itr.remove();
 			}
 		}
