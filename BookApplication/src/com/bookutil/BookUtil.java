@@ -33,9 +33,8 @@ public class BookUtil {
 		for(int i=0 ;i<3;i++) {
 			System.out.print("Fill Details for Book No."+(i+1)+":\n");
 			obj.addBook( butil.getbookobj());
-			//sc.close();
+
 		}
-		//System.out.println("Give Author name to find");
 		@SuppressWarnings("resource")
 		Scanner sc1=new Scanner(System.in);
 		System.out.println("-------------------------------------------------");
