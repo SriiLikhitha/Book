@@ -38,11 +38,6 @@ public class BookUtil {
 		//System.out.println("Give Author name to find");
 		@SuppressWarnings("resource")
 		Scanner sc1=new Scanner(System.in);
-		System.out.println("Give Title name to find:");
-		obj.display(obj.searchByTitle(butil.getString()));
-		System.out.println("Give Author name to find:");
-		obj.display(obj.searchByAuthor(butil.getString()));
-		obj.displayAll();
 		System.out.println("-------------------------------------------------");
 		int id;
 		do {
