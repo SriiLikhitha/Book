@@ -56,12 +56,12 @@ public class Book {
 		{
 			categorylist.add(category1);
 		}
-		String exec=" ";
-		exec+=(bookId.length()==4 && bookId.charAt(0)=='B')?"": "The given BookId is invalid";
-		exec+=(price>0)?"":"Price should be greater than 0";
-		exec+=(categorylist.indexOf(category)!=-1)?"": "Category should be \"Science\",\"Fiction\",\"Technology\",\"Others\"";
+		String A=" ";
+		A+=(bookId.length()==4 && bookId.charAt(0)=='B')?"": "The given BookId is invalid";
+		A+=(price>0)?"":"Price should be greater than 0";
+		A+=(categorylist.indexOf(category)!=-1)?"": "Category should be \"Science\",\"Fiction\",\"Technology\",\"Others\"";
 				
-		if(exec.trim()=="")
+		if(A.trim()=="")
 		{
 			setBookId(bookId);
 			setTitle(title);
@@ -71,7 +71,7 @@ public class Book {
 		}
 		else
 		{
-			throw new InvalidBookException(exec);
+			throw new InvalidBookException(A);
 		}
 	}
 }
