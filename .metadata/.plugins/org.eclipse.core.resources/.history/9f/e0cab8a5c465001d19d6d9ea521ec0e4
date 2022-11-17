@@ -1,0 +1,33 @@
+package com.bookutil;
+import java.util.Scanner;
+import com.book.*;
+import com.book.exception.*;
+
+public class BookUtil {
+
+	public static void main(String[] args) {
+		BookStore obj=new BookStore();
+		for(int i=0;i<1;i++)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Fill Reqired details for Book:"+i+"\n");
+			System.out.println("BookId is:");
+			String BookId=sc.nextLine();
+			System.out.println("Title");
+			String Title=sc.nextLine();
+			System.out.println("Author:");
+			String Author=sc.nextLine();
+			System.out.println("Category:");
+			String Category=sc.nextLine();
+			System.out.println("Price");
+			Float Price=sc.nextFloat();
+			Book b1=new Book(BookId,Title,Author,Category,Price);
+			obj.addBook(b1);
+		}
+		Scanner sc1=new Scanner(System.in);
+		obj.displayAll();
+		
+ 
+	}
+
+}
