@@ -64,6 +64,7 @@ public class Book {
 		if(exec.trim()=="")
 		{
 			setBookId(bookId);
+			setTitle(title);
 			setPrice(price);
 			setCategory(category);
 			setAuthor(author);
