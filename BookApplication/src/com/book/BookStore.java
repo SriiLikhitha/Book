@@ -69,13 +69,13 @@ public class BookStore {
 	}
 	public void deleteBook(String bookId)
 	{
-		for(Book b:BooksList)
-        {
-	     		if(b.getBookId().equals(bookId))
-	     		{
-	     			BooksList.remove(b);
-	     		}
-	    }
+	 Iterator<Book>itr=BookList.iterator();
+		while(itr.hasNext())
+		{
+			if(itr.next().getBookID().equals(bookID)) {
+				itr.remove();
+			}
+		}
 	}
 	public boolean modifyBook(String bookId)
 	{
